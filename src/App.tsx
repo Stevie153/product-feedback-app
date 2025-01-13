@@ -1,10 +1,16 @@
 import "./App.css";
+import Header from "./components/common/Header";
+import Sidebar from "./components/common/SideBar";
 
 function App() {
   return (
     <>
-      <div className=" flex my-20 justify-center">
-        <h1 className="text-2xl text-red-500 font-jost font-bold ">Welcome</h1>
+      <div className="min-h-screen bg-gray-50 flex">
+        <Sidebar />
+        {/* Main content */}
+        <div className="flex-1 p-6">
+          <Header />
+        </div>
       </div>
     </>
   );
